@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header {
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+
+}
+
+
+ul li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+nav ul li {
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid white;
+}
+
+.herosection {
+    background-image: url(images/hero_image.png);
+    height: 100vh;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+}
+
+.herosection .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.herosection h1 {
+    font-size: 94px;
+}
+
+.herosection h3 {
+    font-size: 32px;
+}
+
+.musicsection {
+    padding-top: 50px;
+    background-color: var(--purple500);
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+}
+
+.musicsection .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ipadimage {
+    position: relative;
+    top: 400px;
+    margin-top: -200px;
+}
+
+.btn {
+    background-color: rgb(77, 63, 63);
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.aboutmusic {
+    margin-top: 400px;
+
+    display: grid;
+    place-items: center;
+
+    text-align: center;
+
+}
+
+.aboutmusic .container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.aboutmusic .btn {
+    background-color: var(--purple300);
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.videosection {
+    background-image: url(images/video.png);
+
+
+    height: 100vh;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.videosection .container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.giftsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.giftsection .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 30px;
+
+}
+
+.content button {
+    background-color: var(--purple300);
+    align-self: flex-start;
+    color: white;
+}
+
+.content h3 {
+    font-weight: 600;
+}
+
+.upper {
+    background-color: var(--purple500);
+    color: white;
+
+}
+
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-around;
+    display: flex;
+    padding: 10px 10px;
+}
+
+.footer-upper h4 {
+    border-bottom: 1px solid rgb(245, 242, 242);
+}
+
+.footer-lower {
+    background-color: var(--purple300);
+    text-align: center;
+    padding: 10px 10px;
+    margin-bottom: 50px;
+}

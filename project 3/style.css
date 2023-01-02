@@ -1,0 +1,86 @@
+html,
+body {
+    height: 100%;
+    margin: 0%;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: rgba(49, 9, 9, 0.623);
+}
+
+.pimg1 {
+    background-image: url(image1.png);
+    min-height: 100%;
+
+
+}
+
+.pimg2 {
+    background-image: url(image2.png);
+    min-height: 400px;
+
+
+}
+
+.pimg3 {
+    background-image: url(image3.png);
+    min-height: 400px;
+
+
+}
+
+
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.textbg {
+    background-color: rgb(0, 255, 157);
+}
+
+h2 {
+    text-align: center;
+
+    color: black;
+
+}
+
+p {
+    text-align: center;
+    color: black;
+
+}
+
+
+.sectionlight {
+    background-color: rgb(0, 255, 149);
+    padding: 50px 80px;
+}
+
+.sectiondark {
+    background-color: rgb(0, 255, 149);
+    padding: 50px 80px;
+}
+
+.sectionend {
+    background-color: rgb(0, 255, 149);
+    padding: 50px 80px;
+}

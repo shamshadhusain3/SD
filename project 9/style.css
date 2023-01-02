@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.3rem;
+}
+
+li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+nav ul li :hover {
+    border-bottom: 1px solid #000;
+
+}
+
+a :hover {
+    border-bottom: 1px solid #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* hero */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    padding: 1.5rem;
+}
+
+.hero h1 {
+    font-size: 6.5rem;
+}
+
+.hero h4 {
+    font-size: 2.5rem;
+}
+
+.hero img {
+    border-radius: 5rem;
+
+}
+
+.card {
+    display: flex;
+    margin: 2rem;
+    /* border: 1px solid gray; */
+    border-radius: 5px;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+}
+
+.cardcontent {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.cardcontent h2 {
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.read-btn {
+    all: unset;
+    font-weight: 600;
+}
+
+#card {
+    display: flex;
+
+}
+
+#card .card {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.end .cardcontent h2 {
+    font-size: 4.5rem;
+}
+
+.btn {
+    display: flex;
+    align-items: flex-end;
+    background: rgb(57, 127, 233);
+    padding: .5rem;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+
+}
+
+.end {
+    margin-bottom: 3rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem;
+    padding: 1rem 4rem;
+    font-size: 1.3rem;
+}
+
+footer ul {
+    display: flex;
+    gap: 15px;
+    font-size: 1.3rem;
+
+
+}
+
+/* post */
+.banner {
+    max-width: 1200px;
+}
+
+.hero2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.post {
+    max-width: 1200px;
+    margin: 5rem;
+}
+
+.hero2 img {
+    width: 100%;
+}
+
+.hero2content {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 1.5rem;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+hr {
+    margin: 1.5rem;
+}
+
+.hero2 h1 {
+    font-size: 4rem;
+}
+
+.hero2content h3 {
+    font-size: 2rem;
+}
+
+.hero2content p {
+    font-size: 2rem;
+}
+
+article {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (max-width: 786px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .end {
+        flex-direction: column;
+
+    }
+
+    #card {
+        flex-direction: column;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+
+    }
+
+    .hero h4 {
+        font-size: 2.5rem;
+    }
+}

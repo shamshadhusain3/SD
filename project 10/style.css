@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import 'animate.css';
+
+:root {
+    --lighting-color: #0089b7;
+    --dark-color: #003d62;
+    --darker-color: #003251;
+    --secondary-color: #fff700;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+
+}
+
+body {
+    font-size: 1.4rem;
+
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header {
+    background: var(--lighting-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+
+}
+
+nav ul a li {
+    font-size: 1.8rem;
+    list-style: none;
+
+
+}
+
+
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+nav {
+    padding: 2rem 0;
+}
+
+nav a {
+    font-size: 2rem;
+}
+
+nav a {
+    border-bottom: 0.4rem transparent;
+    transition: 0.3s ease-in-out;
+}
+
+nav a :hover {
+    border-bottom: 0.4rem var(--secondary-color) solid;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+#hero {
+    background: var(--dark-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 0.4rem solid var(--lighting-color);
+}
+
+
+
+.herocontent {
+    display: grid;
+    place-items: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hi {
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.name {
+    font-size: 5rem;
+}
+
+#hero h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    /* Adjust as needed */
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+#projects {
+    background: var(--darker-color);
+}
+
+#projects h1 {
+    font-size: 7rem;
+    text-align: center;
+    padding: 3rem;
+    font-weight: 800;
+
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    /* display: flex;
+    /* flex-direction: column; */
+    /* gap: 10px;
+    flex: wrap */
+    
+
+}
+
+.griditem {
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 320px;
+
+
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+
+}
+
+.card :hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+
+}
+
+.card :hover img {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.gridcontent {
+    padding: 2rem;
+    position: relative;
+    top: -6.2rem;
+    margin-bottom: -6.2rem;
+    transform: translateY(100px);
+
+}
+
+.card:hover .gridcontent {
+    background: white;
+    color: var(--dark-color);
+    transform: translateY(0px);
+    transition: 0.3s ease-in-out;
+}
+
+.gridcontent h3 {
+    text-align: center;
+
+
+}
+
+#contact {
+    display: grid;
+    place-items: center;
+    background: var(--dark-color);
+    gap: 3rem;
+    padding: 4rem;
+}
+
+#contact .container {
+    display: grid;
+    place-items: center;
+    gap: 3rem;
+}
+
+.top_contact {
+    display: flex;
+    gap: 4rem;
+    font-size: 5rem;
+}
+
+.bottom_contact {
+    display: flex;
+    gap: 4rem;
+    font-size: 5rem;
+}
+
+#contact h2 {
+    font-size: 7rem;
+    text-align: center;
+}
+
+.contact_way {
+    display: flex;
+    gap: 2rem;
+
+}
+
+i {
+    padding-top: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background: var(--darker-color);
+    font-size: 4rem;
+    padding: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}

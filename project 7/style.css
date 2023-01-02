@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+header {
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.centernav {
+    display: flex;
+}
+
+.sidenav {
+    display: flex;
+    gap: 25px;
+}
+
+input {
+    width: 400px;
+    ;
+}
+
+/* 
+button img {
+    height: 43px;
+} */
+button {
+    /* background: rgb(214, 205, 205); */
+
+    padding: 0px 10px;
+
+    border: none;
+}
+
+.mic {
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    background: rgb(231, 226, 226);
+    display: grid;
+    place-items: center;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+
+}
+
+aside {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 8px;
+}
+
+.icons {
+    display: grid;
+    place-items: center;
+}
+
+.container2 {
+    width: 100%;
+}
+
+.tags {
+
+    display: flex;
+    border-top: 1px solid rgb(206, 201, 201);
+    ;
+
+    gap: 32px;
+
+
+}
+
+.dark {
+    background: #000;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.light {
+    background: rgb(202, 192, 192);
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+
+main {
+    min-height: 100vh;
+    background: rgb(240, 238, 238);
+}
+
+.cardcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+}
+
+.card {
+    padding: 10px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.avatarcontent {
+    padding-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.card h3 {
+    font-size: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.channel {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.status {
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+}

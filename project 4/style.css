@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+section.hero {
+    background-image: url("./images/developer.png");
+    height: 100vh;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.textcontainer h2 {
+    font-size: 2vw;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+span {
+    font-size: 4vw;
+
+}
+
+.textcontainer h1 {
+    font-size: 3vw;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+.textcontainer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-left: 1px;
+}
+
+.blackbox {
+    background-color: black;
+    padding: 20px;
+}
+
+.blackbox h1 {
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    text-align: center;
+    font-size: 4vw;
+
+}
+
+.blackbox h1 span {
+    font-size: 6vw;
+}
+
+.card {
+    /* display: flex;
+    margin: 50px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.img {
+    border: 2px solid grey;
+    max-width: 320px;
+    border-radius: 20px;
+    margin: 60px;
+    margin-left: 2em;
+    box-shadow: 10px 10px 10px rgba(1, 1, 1, 0.2);
+
+}
+
+.griditem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+
+}
+
+.contact {
+
+    border: 2px solid black;
+    border-radius: 10px 5px 5px rgba(1, 1, 1, 0.2);
+
+    background-color: rgba(214, 68, 68, 0.74);
+}
+
+.about {
+
+    border: 2px solid black;
+    border-radius: 10px 5px 5px rgba(1, 1, 1, 0.2);
+
+    background-color: rgba(11, 104, 11, 0.589);
+}
+
+.enditem {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.contact,
+.about {
+    padding: 25px;
+    min-height: 300px;
+
+}
+
+.contact p,
+.about p {
+    margin-bottom: 20px;
+}
+
+.contact h2,
+.about h2 {
+    font-size: 64px;
+    font-weight: 300;
+}
+
+footer {
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width:786) {
+    section.hero {
+        min-height: 50vh;
+
+    }
+
+    .textcontainer {
+        padding: 10px 0px;
+
+        text-align: center;
+    }
+
+    .enditem,
+    .end {
+        flex-direction: column;
+    }
+}
